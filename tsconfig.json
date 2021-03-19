@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "removeComments": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "incremental": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "paths": {
+      "@ncdf/core/*": ["modules/core/*"],
+      "@ncdf/users/*": ["modules/users/*"],
+      "@ncdf/settings/*": ["modules/settings/*"],
+      "@ncdf/auth/*": ["modules/auth/*"],
+      "@ncdf/company/*": ["modules/companies/*"],
+      "@ncdf/utils/*": ["modules/utils/*"],
+      "@ncdf/config/*": ["config/*"],
+    },
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": [
+    "src",
+    "./node_modules/@types/jest"
+  ],
+  "exclude": [
+    "node_modules",
+    ".build",
+    "coverage"
+  ],
+  "types": [
+    "@types/node",
+    "@types/jest",
+    "@types/dotenv"
+  ]
+}
